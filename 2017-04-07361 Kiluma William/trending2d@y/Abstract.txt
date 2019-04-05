@@ -1,6 +1,11 @@
+“Add Project title here”
+add name
+add regno
+
 Project
-This project will be a website that advertises the most trending features in technology, software, social media and in News.
-The website will report on the top 10 features from each category and will support links to the features for follow ups, more info or more engaging actions(for example 'download').
+This project will be a website that advertises the most trending features in technology, software, social media and in News. The website will report on the top 10 features from each category and will support links to the features for follow ups, more info or more engaging actions(for example 'download').
 
 Aim
-Customers will be able to visit the website to look at the things the want, if theywant to purchase or download. They would also be able to advertise their businesses through potential most famous people on the social networks.
+Customers will be able to visit the website to look at things the want, if they want to purchase or download. They would also be able to advertise their businesses through potential most famous people on the social networks.
+
+YOUR ABSTRACT NEED MAJOR IMPROVEMENT, GOOD TRY THOUGH.
