@@ -1,0 +1,36 @@
+Project Title: Trending Today
+Name: Kiluma, William
+REG NO:2017-04-07361
+
+    week 1:
+        Problem Identification
+        Acquire Project Title and Submit
+
+    week 2:
+        Submit Project Abstract
+        Project Presentation
+
+    week 3:
+        Project Workplan
+        Requirement Analysis and gathering
+
+    4th week - 8th week: 
+	    Start coding project in python using the Django framework
+	    Program Machine learning and Google location into the website
+
+    9th Week:
+        Complete compilation and retreive Prime version of the website
+	    Testing of the prime version of the website
+	 
+    10th Week:
+ 	    Prepare Documentation
+
+    11th Week:
+	   Final test and remarks on Improvements and accomplishments
+
+
+
+    12th week:
+	    Releasing of software of customer
+   
+        
