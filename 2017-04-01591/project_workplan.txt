@@ -12,24 +12,27 @@ PROJECT TITLE: SHULE APP
 3rd week:
 	Requirement gathering
 	Brainstorming the system functionalities
-	
-4th week:
 	Prepare Application Layout
 	Prepare database data models
+	
+4th week - 5th week:
+	Back-end development with Node.JS
+	Applying data mining with Python
+	
 
-5th Week – 6th Week:
-	Back-end development with Node.JS 
-
-7th Week:
+6th Week:
 	Front-end development with Angular 6
+	 
+7th Week:
+	Release alpha version of SHULE APP
+ 	Testing of the application
 
 8th Week:
- 	Release alpha version of SHULE APP
- 	Testing of the application
+ 	Documentations
 
 9th Week – 10th Week:
 	Release the beta version of SHULE APP
-	Final testing and documenting the software
+	Final testing and finaliing documenting the software
 
 11th Week: 
 	Submit the final version of the application
