@@ -1,0 +1,16 @@
+project title: FERNITURE ONLINE COMMERCE BUSSINESS
+ Student name: MPUNDI DANFORD BENSON
+ reg number:  2017-04-07360
+
+  ABSTRACT
+    This is web based application aimed to sell home and office fernitures.
+through this software customers have to buy product our product
+A customer can request what kind ferniture he/she want and the design of that ferniture(if he/she have) through uploading 
+picture.
+
+This software also provide different ferniture desing through pictures so as to help customer to get good ferniture 
+and moderns once with best quality and fitted to its owned place
+
+On this software a customer are required to create an account through its email address  
+and all information concerning the budgeting and negotiation will be conducting here(email)
+ 
