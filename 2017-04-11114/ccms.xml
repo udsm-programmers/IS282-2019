@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Citizen Complaint Management System" company="pavotech" webLink="http://" view-date="2019-03-24" view-index="0" gantt-divider-location="440" resource-divider-location="300" version="2.8.10" locale="en_US">
+    <description><![CDATA[The idea of this system is to help citizens of a Dar es salaam to register complaints about daily problems in their ward using web-based services and later mobile application. The system will provide interface to a common man to deliver his complaint and problem to municipal authority and let the authorities of his municipal to address the problem early as possible and solve in time.
+
+ This system will provide interface to register or lodge complaints and follow it to the end. This interface of the system will be providing a camera or an image attached button to help clicking or uploading a picture of any issue that people are watching and upload this photo along with the complaint. The complaint is once registered, will be send to specific department which connect all municipal in Dar es salaam server site for e.g.; a complaint of damaged road will be send to Tanroads.
+The system will increase citizen involvement by creating an easy way for citizens to report problems. The current method for doing this is either to call the problem in or to navigate through department webpages to fill out a form. Citizens can use to report a variety of issues with city property and which the city itself can directly control. By creating a database for all of the information submitted through a single system, my solution can help the city sort through the reports and prioritize based on that data. Information on these issues can be available to citizens so that they can volunteer to help fix problems as well. By having people participate in the maintaining of their city and giving the city a way to collect information, the system will have the potential to increase collaboration between the city and its people.
+Citizen Complaint is important information reflecting citizen sound and is a primary measure of citizen dissatisfaction. An effective and efficient response to these complaints is an essential index of city performance. The presented model for the citizen Complaint Management System will have the ability to minimize citizen’ dissatisfaction and on the other hand it can encourage citizen`s to participate in controlling the quality of the service provided by every municipal in region. I try to improve the relationship between Citizen`s and every region in a country by using a new model of electronic Complaint web service based system.
+
+
+This system will be able to handle complaints by recording and giving feedback for each raised complaint. Results of the study can be a good reference to find out citizens’ needs from e-complaint and the handling process of this complaint in the body of any organization or authority.
+]]></description>
+    <view zooming-state="default:6" id="gantt-chart">
+        <field id="tpd3" name="Name" width="260" order="0"/>
+        <field id="tpd4" name="Begin date" width="73" order="1"/>
+        <field id="tpd5" name="End date" width="103" order="2"/>
+        <timeline><![CDATA[0]]></timeline>
+        <option id="color.recent"><![CDATA[#ccccff #00ff33 #00ff00]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="observing our society" color="#8cb6ce" meeting="false" start="2019-03-25" duration="3" complete="0" thirdDate="2019-03-18" thirdDate-constraint="0" expand="true"/>
+        <task id="2" name="Problem Identification" color="#8cb6ce" meeting="false" start="2019-03-28" duration="1" complete="0" thirdDate="2019-03-18" thirdDate-constraint="0" expand="true"/>
+        <task id="4" name="Writing proposal and submit Project title" color="#8cb6ce" meeting="false" start="2019-03-29" duration="1" complete="0" thirdDate="2019-03-18" thirdDate-constraint="0" expand="true"/>
+        <task id="6" name="initial project presentantion" color="#8cb6ce" meeting="false" start="2019-04-01" duration="1" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="8" name="Perform risk analysis" color="#8cb6ce" meeting="false" start="2019-04-02" duration="3" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="17" name="Prepare the Project workplan" color="#8cb6ce" meeting="false" start="2019-04-04" duration="2" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="18" name="Requirement gathering" color="#8cb6ce" meeting="false" start="2019-04-08" duration="2" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="20" name="Virtual Brainstorming(web based system)" color="#8cb6ce" meeting="false" start="2019-04-08" duration="5" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="22" name="Prepare a use case diagrams" color="#8cb6ce" meeting="false" start="2019-04-11" duration="2" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="24" name="designing a Frontend interfaces(photoshop)" color="#8cb6ce" meeting="false" start="2019-04-15" duration="5" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="26" name="prepare second project presentation" color="#8cb6ce" meeting="false" start="2019-04-18" duration="2" complete="0" thirdDate="2019-03-25" thirdDate-constraint="0" expand="true"/>
+        <task id="27" name="Front-end development( HTML, CSS, and JavaScrip)" color="#8cb6ce" meeting="false" start="2019-04-22" duration="5" complete="0" thirdDate="2019-04-11" thirdDate-constraint="0" expand="true"/>
+        <task id="30" name="Back-end development(php)" color="#8cb6ce" meeting="false" start="2019-04-29" duration="5" complete="0" thirdDate="2019-04-05" thirdDate-constraint="0" expand="true"/>
+        <task id="33" name="Release initial version of CCMS" color="#8cb6ce" meeting="false" start="2019-05-06" duration="2" complete="0" thirdDate="2019-04-05" thirdDate-constraint="0" expand="true"/>
+        <task id="36" name="Testing of the CCMS system" color="#8cb6ce" meeting="false" start="2019-05-08" duration="3" complete="0" thirdDate="2019-04-23" thirdDate-constraint="0" expand="true"/>
+        <task id="38" name="evaluating the System" color="#8cb6ce" meeting="false" start="2019-05-13" duration="5" complete="0" thirdDate="2019-04-23" thirdDate-constraint="0" expand="true"/>
+        <task id="41" name="Perform System Final testing" color="#8cb6ce" meeting="false" start="2019-05-20" duration="2" complete="0" thirdDate="2019-04-23" thirdDate-constraint="0" expand="true"/>
+        <task id="43" name="Release the beta version of CCMS system" color="#8cb6ce" meeting="false" start="2019-05-22" duration="1" complete="0" thirdDate="2019-05-09" thirdDate-constraint="0" expand="true"/>
+        <task id="45" name="System Documentations" color="#8cb6ce" meeting="false" start="2019-05-23" duration="5" complete="0" thirdDate="2019-05-09" thirdDate-constraint="0" expand="true"/>
+        <task id="47" name="Submit the final version of the CCMS system" color="#8cb6ce" meeting="false" start="2019-05-30" duration="2" complete="0" thirdDate="2019-05-09" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
