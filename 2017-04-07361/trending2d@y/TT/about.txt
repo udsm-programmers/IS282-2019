@@ -1,0 +1,5 @@
+To run the following program you must have the following requirements:
+    python must be installed in your device
+    the django framework must also be installed in your device
+    you run the system by running the following command on your device once the above requirements are reached and you have navigated to /IS282-2019/2017-04-07361/trending2d@y/TT
+    "python manage.py runserver"
