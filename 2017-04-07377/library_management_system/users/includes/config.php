@@ -1,7 +1,7 @@
 <?php 
     $host = "localhost";
-    $user = "root";
-    $password = "root";
+    $user = "gordon";
+    $password = "";
     $db = "library";
 
     // make database connection

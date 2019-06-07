@@ -1,81 +1,83 @@
 <?php 
-	// include connect script
-	include("includes/connect.php");
+	session_start();
+	include('includes/connect.php');
 
-	// query the database
-	$query = "SELECT * FROM book ORDER BY id";
-	$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+	if(isset($_SESSION['login'])) {
+		$_SESSION['login'] = '';
+	}
+
+	if(isset($_POST['login'])) {
+		$username = $_POST['username'];
+		$password = $_POST['password'];
+
+		$query = "SELECT username, password FROM admin WHERE username='$username' AND password='$password'";
+
+		$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
+
+		if($result) {
+			$count = mysqli_num_rows($result);
+			$row = mysqli_fetch_array($result);
+
+			if($count > 0) {
+				$_SESSION['login'] = $row['username'];
+				header('location: dashboard.php');
+			} else {
+				echo "<script>alert('invalid login credentials');</script>";
+			}
+		}
+
+	}
+
 
 ?>
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- BOOTSTRAP CORE STYLE -->
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="">
+	<meta name="author" content="Gordon Nchy">
+	<!-- BOOTSTRAP STYLE -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<!-- CUSTOM STYLE -->
 	<link rel="stylesheet" href="assets/css/style.css">
-	<title>Homepage</title>
+
+	<title>Library Management System | Admin Login</title>
 </head>
 <body>
 	<div class="content-wrapper">
 		<div class="container">
-			<div class="row pad-botm">
-				<div class="col-md-12">
-					<h1 class="header-line">LIBRARY MANAGEMENT SYSTEM</h1>
-				</div>
-			</div>
-
-			<div class="row pad-botm">
-				<div class="col-md-12">
-					<h3>
-						<a href="#" class="pr-5">ADMIN PANEL</a> / 
-						<small>Dashboard</small>
-						<small><p class="lead">List of all books provided by LIBSYS</p></small>
-					</h3>					
-				</div>
-			</div>
+			<h1 class="header-line text-uppercase">LIBRARY MANAGEMENT SYSTEM</h1>
 
 			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<table class="table">
-						<thead class="thead-dark">
-							<tr>
-								<th>Title</th>
-								<th>author</th>
-								<th>ISBN</th>
-								<th>status</th>
-								<th>update</th>
-							</tr>
-						</thead>
-						<tbody>
-							<?php 
-								
-								while($res = mysqli_fetch_array($result)) {
-									echo "<tr>";
-									echo "<td>".$res['title']."</td>";
-									echo "<td>".$res['author']."</td>";
-									echo "<td>".$res['isbn']."</td>";
-									echo "<td>".$res['status']."</td>";
-									echo "<td><a href=\"edit.php?id=$res[id]\" class=\"btn btn-sm btn-primary\">Edit</a> | <a href=\"delete_record.php?id=$res[id]\" class=\"btn btn-sm btn-danger\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
-								}
-							?>
-						</tbody>
-					</table>
+				<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+					<div class="panel panel-secondary">
+						<div class="panel-heading">
+							ADMIN LOGIN
+						</div>
+
+						<div class="panel-body">
+							<form action="<?php echo $PHP_SELF; ?>" method="post" role="form">
+								<div class="form-group">
+									<label for="username">username</label>
+									<input type="text" name="username" class="form-control" autocomplete="off" required>
+								</div>
+
+								<div class="form-group">
+									<label for="password">password</label>
+									<input type="password" name="password" class="form-control" autocomplete="off" required>
+								</div>
+
+								<button type="submit" name="login" class="btn btn-secondary">LOGIN</button>
+							</form>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<?php 
-		include("includes/footer.php");
-	?>
-
-	<!-- BOOTSTRAP SCRIPT -->
-	<script src="assets/js/bootstrap.js"></script>
-	<script src="assets/js/jquery-1.10.2.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php 
 	// include connect script
-	include("connect.php");
+	include("includes/connect.php");
 
 	// query to create database table
 	$query = "CREATE TABLE book (";

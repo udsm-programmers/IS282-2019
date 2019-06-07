@@ -1,4 +1,5 @@
 <?php 
+	session_start();
 	// include connect script
 	include("includes/connect.php");
 	// declare variable and initialize to empty string
@@ -7,18 +8,10 @@
 
 	// check if values are set
 	if(isset($_POST['submit'])) {
-		if(isset($_POST['title'])) {
-			$title = $_POST['title'];
-		}
-
-		if(isset($_POST['author'])) {
-			$author = $_POST['author'];
-		}
-
-		if(isset($_POST['isbn'])) {
-			$isbn = $_POST['isbn'];
-		}
-
+		$title = $_POST['title'];
+		$author = $_POST['author'];
+		$isbn = $_POST['isbn'];
+		
 		$query = "INSERT INTO book(title, author, isbn, status) VALUES ('$title', '$author', '$isbn' , '$status')";
 
 		$result = mysqli_query($conn, $query);
@@ -31,13 +24,15 @@
 		}
 	}
 ?>
-
+<?php 
+	if(isset($_SESSION['login'])) {
+?>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" href="assets/css/bootstrap.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 
@@ -47,12 +42,12 @@
 	<div class="content-wrapper">
 		<div class="container">
 			<h1 class="header-line">Library management system</h1>
+			<div class="right-div">
+				<a href="dashboard.php">dashboard</a>
+			</div>
 			<div class="row pad-botm">
 				<div class="col-md-12">
-					<h4>
-						Add new Book /
-						<a href="./index.php">Dashboard</a>
-					</h4>
+					<h4>Add new Book </h4>
 				</div>
 			</div>
 
@@ -93,3 +88,8 @@
 	?>
 </body>
 </html>
+<?php } else {?>
+<?php
+	header('location: index.php');
+?>
+<?php }?>
