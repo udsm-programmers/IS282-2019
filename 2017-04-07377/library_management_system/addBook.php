@@ -20,7 +20,7 @@
 			die("Failed to add record " . mysqli_error($conn));
 		} else {
 			echo "record added successfully";
-			header("Location: index.php");
+			header("Location: dashboard.php");
 		}
 	}
 ?>

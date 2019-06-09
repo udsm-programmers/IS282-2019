@@ -21,7 +21,7 @@
 		$query = "UPDATE book SET title='$title', author='$author', isbn='$isbn' WHERE id='$id'";
 		$result = mysqli_query($conn, $query) or die(mysqli_error($conn));
 		if($result) {
-			header("Location: index.php");
+			header("Location: dashboard.php");
 		}
 	}
 ?>

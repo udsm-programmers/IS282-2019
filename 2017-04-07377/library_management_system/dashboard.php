@@ -50,6 +50,7 @@
 								<th>author</th>
 								<th>ISBN</th>
 								<th>status</th>
+								<th>Date added</th>
 								<th>update</th>
 							</tr>
 						</thead>
@@ -66,6 +67,7 @@
 									echo "<td>".$res['author']."</td>";
 									echo "<td>".$res['isbn']."</td>";
 									echo "<td>".$avlb."</td>";
+									echo "<td>".$res['date']."</td>";
 									echo "<td><a href=\"edit.php?id=$res[id]\" class=\"btn btn-sm btn-primary\">Edit</a> | <a href=\"delete_record.php?id=$res[id]\" class=\"btn btn-sm btn-danger\" onClick=\"return confirm('Are you sure you want to delete?')\">Delete</a></td>";
 								}
 							?>
