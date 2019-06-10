@@ -32,7 +32,7 @@
                     $output = $output.'<li class="list-group-item"><span>Publisher: </span>'.$row['publisher'].'</li>';
                     $output = $output.'<li class="list-group-item"><span>Category: </span>'.$row['category'].'</li>';
                     $output = $output.'<li class="list-group-item"><span>Description: </span>'.$row['description'].'</li>';
-                    $output = $output.'<li class="list-group-item"><a href="deletebook.php?id='.$row['id'].'" class="btn btn-danger">Delete</a>';
+                    $output = $output.'<li class="list-group-item"><a href="deletebook.php?id='.$row['id'].'" onClick="return confirm(\'Are you sure you want to Delete\')" class="btn btn-danger">Delete</a>';
                     $output = $output.'<a href="editbook.php?id='.$row['id'].'" class="btn btn-primary">Edit</a></li></ul></div>';
 
                     echo $output;
