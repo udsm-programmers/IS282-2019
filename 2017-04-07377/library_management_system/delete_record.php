@@ -6,6 +6,6 @@
 	$result = mysqli_query($conn, "DELETE FROM book WHERE id='$id'") or die(mysqli_error($conn));
 
 	if($result) {
-		header("Location: index.php");
+		header("Location: dashboard.php");
 	}
 ?>

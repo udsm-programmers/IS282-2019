@@ -1,5 +1,4 @@
 <section class="footer-section">
-    <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <?php 
@@ -11,7 +10,6 @@
                 ?>  
             </div>
         </div>
-    </div>    
 <script>
     let date = new Date();
     let dYear = document.querySelector('#dYear');

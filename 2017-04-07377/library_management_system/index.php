@@ -38,46 +38,55 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<meta name="description" content="">
 	<meta name="author" content="Gordon Nchy">
-	<!-- BOOTSTRAP STYLE -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<!-- CUSTOM STYLE -->
-	<link rel="stylesheet" href="assets/css/style.css">
-
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+	<!-- BOOTSTRAP LINKS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/dashboard.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+		
 	<title>Library Management System | Admin Login</title>
 </head>
 <body>
-	<div class="content-wrapper">
 		<div class="container">
-			<h1 class="header-line text-uppercase">LIBRARY MANAGEMENT SYSTEM</h1>
-
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-					<div class="panel panel-secondary">
-						<div class="panel-heading">
-							ADMIN LOGIN
-						</div>
-
-						<div class="panel-body">
-							<form action="<?php echo $PHP_SELF; ?>" method="post" role="form">
-								<div class="form-group">
-									<label for="username">username</label>
-									<input type="text" name="username" class="form-control" autocomplete="off" required>
-								</div>
-
-								<div class="form-group">
-									<label for="password">password</label>
-									<input type="password" name="password" class="form-control" autocomplete="off" required>
-								</div>
-
-								<button type="submit" name="login" class="btn btn-secondary">LOGIN</button>
-							</form>
+			<h2 class="text-center">LIBRARY MANAGEMENT SYSTEM</h2>
+				<div class="table-wrapper no-padding admin-login">
+					<div class="table-title no-margin-bottom">
+						<div class="row">
+							<div class="col-sm-12">
+								<h2><b>Admin</b> Login</h2>
+							</div>
 						</div>
 					</div>
-				</div>
-			</div>
+					<div class="login-form addBook-form">
+						<form action="<?php echo $PHP_SELF; ?>" method="post" role="form">
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user"></i></span>
+									<input type="text" name="username" class="form-control autocomplete="off" placeholder="Username" required="required">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+									<input type="password" name="password" class="form-control autocomplete="off" placeholder="Password" required="required">
+								</div>
+							</div>
+							<div class="form-group">
+								<button type="submit" name="login" class="btn btn-primary btn-block">Log in</button>
+							</div>
+							<div class="clearfix">
+								<label class="pull-left checkbox-inline"><input type="checkbox"> Remember me</label>
+								<a href="#" class="pull-right">Forgot Password?</a>
+							</div>
+						</form>
+				 	</div>
+				</div>	
+				<div class="no-padding text-center">
+					<?php include('includes/footer.php'); ?>
+				</div> 
 		</div>
-	</div>
 </body>
 </html>

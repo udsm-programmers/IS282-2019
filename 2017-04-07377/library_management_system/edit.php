@@ -50,54 +50,59 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/bootstrap.css">
-	<link rel="stylesheet" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+	<!-- BOOTSTRAP STYLES -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="stylesheet" href="./assets/dashboard.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	<title>Edit Form</title>
 </head>
 <body>
-	<div class="content-wrapper">
-		<div class="container">
-			<h1 class="header-line">Library Management System</h1>
-			<div class="row pad-botm">
-				<div class="col-md-12">
-					<a href="./index.php" class="btn btn-info btn-sm">&larr; Go back</a>
+	<div class="container">
+		<h2 class="text-center">LIBRARY MANAGEMENT SYSTEM</h2>
+		<div class="table-wrapper no-padding">
+			<div class="table-title no-margin-bottom">
+				<div class="row">
+					<div class="col-sm-6">
+						<h2>Edit Book Info</h2>
+					</div>
+					<div class="col-sm-6">
+						<a href="./dashboard.php" class="btn btn-success">Dashboard</a>
+					</div>
 				</div>
 			</div>
+			<div class="login-form addBook-form">
+				<form method="post" role="form" action="<?php echo $PHP_SELF; ?>">
+					<div class="form-group">
+						<label for="title">Title</label>
+						<input type="text" class="form-control" name="title" value="<?php echo $bkTitle; ?>">
+					</div>
 
-			<div class="row">
-				<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
-					<div class="panel panel-info">
-						<div class="panel-heading">
-							UPDATE FORM
-						</div>
-						<div class="panel-body">
-							<form method="post" role="form" action="<?php echo $PHP_SELF; ?>">
-								<div class="form-group">
-									<label for="title">Title</label>
-									<input type="text" class="form-control" name="title" value="<?php echo $bkTitle; ?>">
-								</div>
+					<div class="form-group">
+						<label for="author">Author</label>
+						<input type="text" class="form-control" name="author" value="<?php echo $bkAuthor; ?>">
+					</div>
 
-								<div class="form-group">
-									<label for="author">Author</label>
-									<input type="text" class="form-control" name="author" value="<?php echo $bkAuthor; ?>">
-								</div>
-
-								<div class="form-group">
-									<label for="isbn">ISBN</label>
-									<input type="text" class="form-control" name="isbn" value="<?php echo $bkIsbn; ?>">			    
-								</div>
-								<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
-								<button type="submit" name="update" class="btn btn-info btn-lg">UPDATE</button>
-							</form>
-						</div>
-					</div>	
-				</div>
+					<div class="form-group">
+						<label for="isbn">ISBN</label>
+						<input type="text" class="form-control" name="isbn" value="<?php echo $bkIsbn; ?>">	    
+					</div>
+						
+					<div class="form-group">
+						<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+						<button type="submit" name="update" class="btn btn-primary btn-block">UPDATE</button>
+					</div>
+				</form>
 			</div>
 		</div>
+		<div class="no-padding">
+			<?php include('includes/footer.php'); ?>
+		</div>
 	</div>
-	<?php include('includes/footer.php'); ?>
 </body>
 </html>
 <?php } else {?>
