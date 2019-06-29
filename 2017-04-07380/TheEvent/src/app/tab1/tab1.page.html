@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      The Event
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-title> Select the Event</ion-title>
+
+  <ion-grid>  
+
+    <ion-row>
+      <ion-col>
+             <ion-card routerLink="/wedding-services" routerDirection="foward">
+               <img src="assets/icon/wedding.jpg">
+               <ion-card-content>Wedding</ion-card-content>
+             </ion-card>
+      </ion-col>
+      <ion-col>
+          <ion-card routerLink="/graduation-services" routerDirection="foward">
+              <img src="assets/icon/graduation.gif">
+              <ion-card-content>Graduation</ion-card-content>
+            </ion-card>
+        </ion-col>
+    </ion-row> 
+
+    <ion-row>
+        <ion-col>
+            <ion-card routerLink="/birthday-services" routerDirection="foward">
+                <img src="assets/icon/birthday.jpg">
+                <ion-card-content>Birthday</ion-card-content>
+              </ion-card>
+        </ion-col>
+        <ion-col>
+            <ion-card>
+                <img src="assets/icon/others.jpg" alt=" ">
+                <ion-card-content>Funeral</ion-card-content>
+              </ion-card>
+
+          </ion-col>
+      </ion-row> 
+ 
+  </ion-grid>
+
+</ion-content>
