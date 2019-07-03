@@ -1,0 +1,39 @@
+PROJECT TITLE: SHULE APP
+
+1st week:
+	Problem Identification
+	Project title submission
+
+2nd week:
+	Prepare the project workplan
+	First project presentantion
+	Risk analysis
+
+3rd week:
+	Requirement gathering
+	Brainstorming the system functionalities
+	Prepare Application Layout
+	Prepare database data models
+	
+4th week - 5th week:
+	Back-end development with Node.JS
+	Applying data mining with Python
+	
+
+6th Week:
+	Front-end development with Angular 6
+	 
+7th Week:
+	Release alpha version of SHULE APP
+ 	Testing of the application
+
+8th Week:
+ 	Documentations
+
+9th Week – 10th Week:
+	Release the beta version of SHULE APP
+	Final testing and finaliing documenting the software
+
+11th Week: 
+	Submit the final version of the application
+

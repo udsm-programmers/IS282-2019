@@ -1,0 +1,62 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <img src="assets/imgs/udsm-logo.png" style="height: 40px; width: 35px;" />
+      <ion-title><b>IS 282</b></ion-title>
+      <ion-icon size="large" name="more"></ion-icon>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+ 
+  <!-- Search Via Face Scanning -->
+
+  <ion-card class="card">
+    <ion-card-header  style="height: 280px; margin: auto;">
+        <img src="{{image}}">
+    </ion-card-header>
+    <ion-card-content>
+      <div text-center>
+          <ion-icon (click)="scanFace()" size="large" name="camera"></ion-icon>
+
+      </div>
+
+    </ion-card-content>
+  </ion-card>
+  <div text-center>
+    <ion-button routerLink="/results" routerDirection="forward" color="medium" class="searchButton">
+      SEARCH
+    </ion-button>
+  </div>
+
+  <!-- Search Via Registration Number -->
+  <div text-center>
+    <ion-item class="card" text-center style="margin-top: 25px;">
+      <ion-input type="text" placeholder="Registration Number"></ion-input>
+    </ion-item>
+  </div>
+  <div text-center>
+    <ion-button routerLink="/results" routerDirection="forward" color="medium" class="searchButton">
+      SEARCH
+    </ion-button>
+  </div>
+</ion-content>
+
+<!-- Search Alternative Button-->
+<ion-footer>
+  <ion-toolbar>
+    <ion-segment>
+      <ion-segment-button checked>
+        <ion-icon size="large" name="camera"></ion-icon>
+        Scan Face
+      </ion-segment-button>
+      <ion-segment-button>
+        <ion-icon size="large" name="keypad"></ion-icon>
+        Enter Reg: No.
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
