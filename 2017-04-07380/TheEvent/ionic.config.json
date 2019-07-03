@@ -1,7 +1,0 @@
-{
-  "name": "TheEvent",
-  "integrations": {
-    "cordova": {}
-  },
-  "type": "angular"
-}
