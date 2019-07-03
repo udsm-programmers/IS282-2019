@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/loginbg"
+    android:layout_height="match_parent"
+    tools:context=".AdminData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:orientation="vertical"
+        android:background="@drawable/picha">
+
+
+
+        <TextView
+            android:background="@drawable/loginbg"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/view20"
+            android:text="@string/text_view"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/idno"
+            android:hint="@string/hint_s"
+            android:textSize="25sp"
+            android:textColorHint="#fff"
+            android:textColor="@color/yellow"
+            android:background="@color/colorPrimary"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/fullname"
+            android:hint="@string/hint_regno"
+            android:textSize="25sp"
+            android:textColorHint="#fff"
+            android:textColor="@color/yellow"
+            android:background="@color/colorPrimary"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/regno"
+            android:hint="@string/hint_fullnam"
+            android:textSize="25sp"
+            android:textColorHint="#fff"
+            android:textColor="@color/yellow"
+            android:background="@color/colorPrimary"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:id="@+id/editmark"
+            android:hint="@string/hint_is3"
+            android:textSize="25sp"
+            android:textColorHint="#fff"
+            android:textColor="@color/yellow"
+            android:background="@color/colorPrimary"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/joinusbg"
+        android:layout_width="450dp"
+        android:layout_height="130sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:drawableTop="@drawable/ic_add_box_black_24dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="170sp"
+            android:layout_height="130sp"
+            android:text="@string/text_add"
+            android:background="@drawable/buttonshape"
+            android:textColor="#fff"
+            android:id="@+id/btnAdd"/>
+
+        <Button
+            android:layout_marginLeft="15dp"
+            android:drawableTop="@drawable/ic_delete_black_24dp"
+            android:layout_marginTop="3dp"
+            android:layout_width="170sp"
+            android:layout_height="130sp"
+            android:text="@string/text_delete"
+            android:background="@drawable/buttonshape"
+            android:textColor="#fff"
+            android:id="@+id/btndelete"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/loginbg"
+        android:layout_width="450dp"
+        android:layout_height="120sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:layout_width="170sp"
+            android:layout_height="120sp"
+            android:text="@string/text_update"
+            android:background="@drawable/buttonshape"
+            android:drawableTop="@drawable/ic_update_black_24dp"
+            android:textColor="#fff"
+            android:id="@+id/btnupdate"/>
+
+        <Button
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="3dp"
+            android:layout_width="170sp"
+            android:layout_height="120sp"
+            android:text="@string/text_view1"
+            android:background="@drawable/buttonshape"
+            android:textColor="#fff"
+            android:drawableTop="@drawable/ic_pageview_black_24dp"
+            android:id="@+id/btnvie2"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="450sp"
+        android:layout_height="150sp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <Button
+            android:layout_marginLeft="90sp"
+            android:layout_marginTop="3dp"
+            android:layout_width="200sp"
+            android:layout_height="120sp"
+            android:text="@string/text_viewAll"
+            android:drawableTop="@drawable/ic_view_list_black_24dp"
+            android:background="@drawable/buttonshape"
+            android:textColor="#fff"
+            android:id="@+id/btnviewall2"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>
