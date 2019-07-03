@@ -1,0 +1,16 @@
+<?php
+error_reporting(0);
+	if($check==1)
+		{
+			session_start();
+			$_SESSION['userid']=$username;
+			header("location:viewusers.php");
+			die();
+		}
+session_start();
+if(empty($_SESSION['userid']))
+{
+header("location:index.php");	
+die();
+}
+?>
