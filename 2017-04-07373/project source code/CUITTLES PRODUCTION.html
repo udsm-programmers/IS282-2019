@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<title>www.cuittles.com</title>
+ <link rel="stylesheet" href="CUITTLES PRODUCTION.css">
+</head>
+<body>
+<div class="bg-color">
+		<ul>
+	<li> <img src="mylogo.jpg" style="width:80px;height:55px;padding:2px 0 2px 0;border-radius:15px 15px 15px 15px;"/>  </li> 	
+	<li><a href="CUITTLES PRODUCTION.html" style="background-color: #687864;margin: 2px"><i class="fa fa-fw fa-home"></i> home</a></li>
+	<li><a href="productsviews.html"><i class="fa fa-bars"></i> products</a></li>
+    <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> contant us</a></li>
+    <li class="header"><a href="loginfile.html"><i class="fa fa-fw fa-user"></i> login</a></li>
+    <li class="head"><a href="signupfile.html">sign up</a></li>
+	</ul>
+	<div class="bg-text">CUITTLES PRODUCTION</div>
+	<div class="myawesome">
+		<p><i class="fa fa-spinner w3-spin" style="font-size:65px"></i></p>
+	</div>
+<h3 style="">Welcome in the woodcarvers,,we are served you like your home place!!</h3>
+	</div>
+<div style="max-width:100%">
+	<img class="bg-image" src="cuittles.png" >
+	<img class="bg-image" src="pc22.png" >
+	<img class="bg-image" src="pc23.png" >
+</div>
+ <script>
+	var myIndex = 0;
+	carousel();
+	
+	function carousel() {
+	  var i;
+	  var x = document.getElementsByClassName("bg-image");
+	  for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+	  }
+	  myIndex++;
+	  if (myIndex > x.length) {myIndex = 1}    
+	  x[myIndex-1].style.display = "block";  
+	  setTimeout(carousel, 5000); // Change image every 5 seconds
+	}
+	</script>
+<div class="marquee"><marquee>BEST FOR CULTURAL MATERIALS</marquee></div>
+ <div class="myblog">
+	<h3>about-us</h3>
+<pre>
+   cuittles production is the platform deals with advertising and marketing of <span>woodcarvers</span> 
+   which simplify communication between customers and artisan who make this products
+   ,also it is condusive for everyone who want to access our products,,
+<span>we make you to feel confortable with your money</span>
+      </pre>
+ <footer id="myfooter">&copy;2019. all right reserved</footer>
+    </div>
+  </body>
+  </html>

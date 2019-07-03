@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/maxresdefault"
+    tools:context=".select">
+
+
+    <LinearLayout
+        android:layout_marginTop="120sp"
+        android:layout_width="170sp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/professor"
+            android:layout_marginTop="60sp"
+            android:id="@+id/imageadmin"
+            />
+        <TextView
+            android:layout_width="120sp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_ad"
+            android:textColor="#fff"
+            android:layout_marginLeft="15sp"
+            android:textSize="20dp"
+            android:id="@+id/admin2"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="120sp"
+        android:layout_width="match_parent"
+        android:layout_height="450sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:src="@drawable/student"
+            android:layout_marginTop="60sp"
+            android:id="@+id/imagestudent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_st"
+            android:textColor="#fff"
+            android:textSize="25sp"
+            android:id="@+id/textstudent"
+            android:layout_marginLeft="30sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

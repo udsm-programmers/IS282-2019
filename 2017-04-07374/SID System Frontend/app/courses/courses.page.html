@@ -1,0 +1,128 @@
+
+<!-- Course Selection Header -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      <img src="assets/imgs/udsm-logo.png" style="height: 40px; width: 35px;" />
+      <ion-title><b>SID System</b></ion-title>
+      <ion-icon size="large" name="more"></ion-icon>
+    </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!-- Searchbar and List of Colleges -->
+  <div>
+    <ion-row class="college">
+      <ion-searchbar ></ion-searchbar>
+    </ion-row>
+    <ion-row class="college">
+      <ion-segment scrollable (ionChange)="segmentChanged($event)">
+        <ion-segment-button style="color:mintcream" value="coet" checked>
+          COET
+        </ion-segment-button>
+        <ion-segment-button  style="color:mintcream" value="coict" >
+          COICT
+        </ion-segment-button>
+        <ion-segment-button style="color:mintcream" value="conas">
+          CONAS
+        </ion-segment-button>
+        <ion-segment-button style="color:mintcream" value="cohu">
+          COHU
+        </ion-segment-button>
+        <ion-segment-button style="color:mintcream" value="udbs">
+          UDBS
+        </ion-segment-button>
+        <ion-segment-button style="color:mintcream" value="soed">
+          SOED
+        </ion-segment-button>
+      </ion-segment>
+    </ion-row>
+  </div>
+
+<!-- List of Courses -->
+
+<div [ngSwitch]="currentSegment">
+
+  <div *ngSwitchCase="'coet'">
+    <ion-item *ngFor="let course of coetCourses; let i = index">
+      <ion-avatar slot="start">
+        <img [src]="course.image" />
+      </ion-avatar>
+      <ion-label>{{course.courseName}}</ion-label>
+      <ion-checkbox color="secondary" [(ngModel)]="course.isChacked" (ionChange)="checkedCourse(course,i)"></ion-checkbox>
+    </ion-item>    
+  </div>
+  
+  <div *ngSwitchCase="'coict'">
+      <ion-item *ngFor="let course of coictCourses; let i = index">
+        <ion-avatar slot="start">
+          <img [src]="course.image" />
+        </ion-avatar>
+        <ion-label>{{course.courseName}}</ion-label>
+        <ion-checkbox color="secondary" [(ngModel)]="course.isChacked" (ionChange)="checkedCourse(course,i)"></ion-checkbox>
+      </ion-item>
+      
+    </div>
+
+    <div *ngSwitchCase="'conas'">
+        <ion-item *ngFor="let course of conasCourses; let i = index">
+          <ion-avatar slot="start">
+            <img [src]="course.image" />
+          </ion-avatar>
+          <ion-label>{{course.courseName}}</ion-label>
+          <ion-checkbox color="secondary" [(ngModel)]="course.isChacked" (ionChange)="checkedCourse(course,i)"></ion-checkbox>
+        </ion-item>
+        
+      </div>
+
+      <div *ngSwitchCase="'udbs'">
+          <ion-item *ngFor="let course of udbsCourses; let i = index">
+            <ion-avatar slot="start">
+              <img [src]="course.image" />
+            </ion-avatar>
+            <ion-label>{{course.courseName}}</ion-label>
+            <ion-checkbox color="secondary" [(ngModel)]="course.isChacked" (ionChange)="checkedCourse(course,i)"></ion-checkbox>
+          </ion-item>
+          
+        </div>
+
+        <div *ngSwitchCase="'cohu'">
+            <ion-item *ngFor="let course of cohuCourses; let i = index">
+              <ion-avatar slot="start">
+                <img [src]="course.image" />
+              </ion-avatar>
+              <ion-label>{{course.courseName}}</ion-label>
+              <ion-checkbox color="secondary" [(ngModel)]="course.isChacked" (ionChange)="checkedCourse(course,i)"></ion-checkbox>
+            </ion-item>
+            
+          </div>
+
+          <div *ngSwitchCase="'soed'">
+              <ion-item *ngFor="let course of soedCourses; let i = index">
+                <ion-avatar slot="start">
+                  <img [src]="course.image" />
+                </ion-avatar>
+                <ion-label>{{course.courseName}}</ion-label>
+                <ion-checkbox color="secondary" [(ngModel)]="course.isChacked" (ionChange)="checkedCourse(course,i)"></ion-checkbox>
+              </ion-item>
+              
+            </div>
+
+  </div>
+
+</ion-content>
+
+<!-- Footer for Submition Button (OK) -->
+
+<ion-footer>
+    <ion-toolbar>
+      <div text-end>
+      <ion-button routerLink="/search" routerDirection="forward" color="light" style="width:90px; color: rgb(11, 140, 75);"><b>OK</b></ion-button>
+    </div>
+    </ion-toolbar>
+  </ion-footer>
+
+

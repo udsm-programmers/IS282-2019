@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewresults">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewresults"
+        android:text="@string/text_results"
+        android:textColor="@color/yellow"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:text="@string/text_semister"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_marginTop="30sp"
+        android:id="@+id/textsee"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="55sp"
+        android:id="@+id/see"
+        android:hint="@string/text_view2"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        android:background="@color/yellow"
+        android:layout_marginTop="50sp"/>
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:text="@string/text_view1"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="110sp"
+        android:textColor="@color/yellow"
+        android:id="@+id/btnv23"/>
+    <Button
+        android:layout_width="120sp"
+        android:layout_height="50sp"
+        android:text="@string/text_logout"
+        android:background="@drawable/buttonshape"
+        android:layout_marginTop="40sp"
+        android:layout_marginLeft="110sp"
+        android:textColor="#fff"
+        android:id="@+id/btnvlogout"/>
+
+
+</LinearLayout>

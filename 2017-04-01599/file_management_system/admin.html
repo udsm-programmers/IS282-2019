@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+    <div class="header">
+        <!--header of title-->
+       <h2>FILE MANAGEMENT SYSTEM</h2>
+ </div>
+    <div class="outerleftleft">
+        <div class="topnavmenu">
+            <div class="topnav">
+                <div class="sensamenu">
+                    <button style="width:100px; height: 40px; text-align: center; font-size: medium; font-family: Georgia, 'Times New Roman', Times, serif">
+      <i class="fa fa-home"></i>Home</button><br><br>
+  <button class="tablinks" onclick="openView(event, 'Register employees')" id="defaultOpen"><a href="REGISTRATIONFORM.HTML">Register employees</a></button>
+  <button class="tablinks" onclick="openView(event, 'List of employees')">List of employees</button>
+  <!-- <button class="tablinks" onclick="openView(event, 'View employee details')">View employee details</button> -->
+  <button class="tablinks" onclick="openView(event, 'Update employee details')">Update employee details</button>
+  <button class="tablinks" onclick="openView(event, 'Upload file')">Upload file</button>
+  <!-- <button class="tablinks" onclick="openView(event, 'Reject request')">Reject request</button>  
+  <button class="tablinks" onclick="openView(event, 'Accept request')">Accept request</button> -->
+  <button class="tablinks" onclick="openView(event, 'Delete employee records')">Delete employee records</button>
+  <button class="tablinks" onclick="openView(event, 'View uploaded file')">View uploaded files</button>
+  <button class="tablinks" onclick="openView(event, 'Logout')">Logout</button>
+  </div>
+ </div>
+    </div>
+    </div>
+    <div id="Register employees" class="tabcontent">
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="container">
+                    <div class="leftcolumnHeader"> 
+                        <h3> Register employees</h3>
+   <!-- <p> <form  action="C:\Users\oseboy\Desktop\file-management-system" method="POST" style="text-align:center;"></p> -->
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <div id="List of employees" class="tabcontent">
+        <div class="row">
+            <div class="leftcolumn">
+<div class="Servantcontainer">
+<div class="ServantleftcolumnHeader">                                    
+<h3>List of employees</h3>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="Update employee details" class="tabcontent">
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="CensusFormcontainer">
+                    <div class="leftcolumnHeader">
+<h3>Update employee details</h3>
+  <p> The admin will be able to update employee records.</p>		  
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="Upload file" class="tabcontent">
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="Areaconteiner">
+                <div class="leftcolumnHeader">
+                    <h3>Upload file</h3>
+                    <p>
+                     <form action="myform"> <input type="file" name="fileupload" value="fileupload" id="User details">
+                     <label for="User details"> Select a file to upload</label> <input type="submit" value="submit"> </form>.</p> 
+        </div>
+        </div>
+       </div>
+        </div>
+      </div>
+      <div id="Delete employee records" class="tabcontent">
+            <div class="row">
+                <div class="leftcolumn">
+    <div class="Servantcontainer">
+    <div class="ServantleftcolumnHeader">                                    
+    <h3>Delete employee records</h3>
+    <p></p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div> 
+        <div id="View uploaded file" class="tabcontent">
+                <div class="row">
+                    <div class="leftcolumn">
+                        <div class="CensusFormcontainer">
+                            <div class="leftcolumnHeader">   
+        <h3>View uploaded file</h3>
+          <p> The admin will be able to Download files that have been uploaded.</p>         
+            </div>
+            </div>
+            </div>
+            </div>
+            </div>
+<div id="Logout" class="tabcontent">
+<div class="row">
+        <div class="leftcolumn">
+            <div class="Areaconteiner">
+                <div class="leftcolumnHeader">          
+  <h3>Logout</h3>
+  <p> admin will be able to exit from the system after completing his/her issues.</p>
+</div>
+ </div>
+  </div>
+  </div>
+ </div>
+    <script>
+        function openView(evt, detail) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(detail).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+</html>

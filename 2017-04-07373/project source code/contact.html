@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+ <link rel="stylesheet" href="contact.css">
+   </head>
+   <body>
+   <ul>
+        <li> <img src="mylogo.jpg" style="width:80px;height:55px;padding:2px 0 2px 0;border-radius:15px 15px 15px 15px;"/>  </li> 	
+        <li><a href="CUITTLES PRODUCTION.html" ><i class="fa fa-fw fa-home"></i> home</a></li>
+        <li><a href="productsviews.html"><i class="fa fa-bars"></i> products</a></li>
+          <li><a href="contact.html" style="background-color: #687864;margin: 2px"><i class="fa fa-fw fa-envelope"></i> contant us</a></li>
+          <li><a href="loginfile.html"><i class="fa fa-fw fa-user"></i> login</a></li>
+          <li class="head"><a href="signupfile.html">sign up</a></li>
+        </ul>
+   <div class="left-container">
+		<h1>contact us</h1>
+  <p>The description about contact us when you need to reach in our place...</p>
+	<p>We are located mwenge near by mpakani in Dar es salaaam Tanzania</p>
+  
+    </div>
+
+  <div class="right-container">
+		<h1>
+			<i class="fa fa-spinner w3-spin" style="font-size:64px"></i>
+			cuittles production 
+		</h1> 
+		<br>
+		phone number:  0738678854 <br><br>
+	   	Email:  betyevaristy@gmail.com
+      </div>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<h3>Contact Form</h3>
+
+<div class="container">
+  <form action="contact.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Tanzania</option>
+      <option value="canada">kenya</option>
+       <option value="canada">china</option>
+        <option value="canada">uganda</option>
+         <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
+
+	 <div id="mapid"></div>
+
+	 <script type="text/javascript">
+	 	var mymap = L.map('mapid').setView([-6.767974, 39.226642], 15);
+
+	 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'your.mapbox.access.token'
+}).addTo(mymap);
+
+		   var marker = L.marker([-6.767974, 39.226642]).addTo(mymap);
+		marker.bindPopup("<b>cuittles!</b><br>We are at mwenge mpakani.").openPopup();
+	</script>
+	 <footer>&copy;2019. all right reserved</footer>
+  </body>
+    </html>
