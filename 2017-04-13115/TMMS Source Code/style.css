@@ -1,0 +1,423 @@
+
+/*body{ 
+  background: url(img05.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/*css for all pages */
+.page {
+	
+  background-size: cover;
+	margin: 0px;
+  padding: 0px;
+  color: black;
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 200;  
+  
+}
+
+
+@media (min-width: 768px) {
+  .header {
+      padding-top: 300px;
+      padding-bottom: 200px;
+  }
+
+
+*{
+	box-sizing: content-box;
+}
+
+
+
+.header {
+   margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: white;
+}
+
+#kifupi {
+  color: black;
+}
+
+#kirefu {
+	color: black;
+}
+
+.nav li {
+	float: left;
+	list-style-type: none;
+}
+
+.nav {
+  float: right;
+  list-style-type: none;  
+}
+
+.span-left {
+  float: left;
+}
+
+
+li a {
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: yellow;
+    color: red;
+    border-radius: 10px;
+}
+
+hr {
+  border-width: 2px;
+  border-color: black;
+}
+
+
+
+
+/* css for home page */
+
+
+#slidy-container { 
+  width: 70%; overflow: hidden; margin: 0 auto;
+}
+
+
+#about-btn-1 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: 18px;
+  text-align: center;
+}
+
+#about-btn-2 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: xx-large;
+  text-align: center;
+}
+
+#about-btn-3 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+#about-btn {
+  position: relative;
+  font-size: 25px;
+  text-align: center;
+}
+
+#index-btn {
+    font-family: "Roboto", sans-serif;
+    width: 150px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: aqua;
+    font-size: 18px;
+    resize: none;
+}
+
+#index-btn:hover {
+    background-color: yellow;
+    color: red;
+    border-radius: 10px;
+}
+
+
+
+/* css for about page */
+
+
+
+.form-1 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: 22px;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 850px;
+  max-height: 280px; 
+  margin: 0 auto 100px;
+  padding: 18px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact {
+  text-align: center;
+}
+
+.section-content-1 {
+  padding-top:65px;
+}
+
+.section-title-1 {
+  text-align: center;
+
+}
+
+
+
+/* css for register page */
+
+
+
+
+.login-page1 {
+  width: 500px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+
+.section-content-1 {
+  padding-top:65px;
+}
+
+.section-title-1 {
+  text-align: center;
+
+}
+  .form1 {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+  font-size: 25px;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 80px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form1 button {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: aqua;
+  width: 100px;
+  height: 45px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  padding: 0px;
+  color: black;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form1 button:hover,.form1 button:active,.form1 button:focus {
+  background: yellow;color: red; 
+}
+
+
+.register-form1 span {
+ color: red;
+}
+
+.register-form1 a {
+ color: black;
+}
+
+
+
+
+/* css for login page */
+
+
+
+
+.form-group-line {
+  float: left;
+  padding: 12px 60px;
+}
+
+.column-01 {
+  float: left;
+  padding: 12px 20px
+}
+
+#login-here {
+  color: red;
+}
+
+.form-control-1 {
+    width: 330px;
+    height: 50px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none
+
+}
+
+.form-btn-1 {
+    width: 110px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: aqua;
+    font-size: 15px;
+    resize: none;
+}
+
+.form-btn-1:hover {
+    background-color: yellow;
+    color: red;
+    border-radius: 10px;
+}
+
+
+.btn-login {
+    padding: 6px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: aqua;
+    font-size: 16px;
+    resize: none;
+}
+
+.btn-login:hover {
+    background-color: yellow;
+    color: red;
+    border-radius: 10px;
+}
+
+
+
+/* css for contact page */
+
+
+
+#contact {
+  text-align: center;
+}
+
+.section-content {
+  padding-top:65px;
+}
+
+.section-title {
+  text-align: center;
+
+}
+
+
+.form-group-line {
+  float: left;
+  padding: 12px 60px;
+}
+
+.column-1 {
+  float: left;
+  padding: 12px 20px
+}
+
+.column-2 {
+  float: left;
+  padding: 12px 200px
+}
+
+.column-3 {
+  float: left;
+  padding: 12px 0px
+}
+
+
+.form-control {
+  width: 80%;
+    height: 40px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none
+
+}
+
+textarea {
+    width: 150%;
+    height: 80px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+.form-btn {
+    width: 180px;
+    height: 30px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: aqua;
+    font-size: 15px;
+    resize: none;
+}
+
+.form-btn:hover {
+    background-color: yellow;
+    color: red;
+    border-radius: 10px;
+}
+
+
+
+
+
+/* css for footer goes here */
+
+
+
+
+
+footer {
+    padding: 30px;
+    background-color: #011a27;    
+}
+
+footer p {
+    color: #B7B7B7;
+    margin: 0;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1.6px;
+    text-align: center;
+}
+
+footer p a {
+    color: #fff;
+}
+
+footer p a span {
+    color: #FF9F46;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}

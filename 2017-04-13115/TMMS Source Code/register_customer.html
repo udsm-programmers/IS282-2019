@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>register page</title> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<!-- Model for header item 1 -->
+	<div class="page">
+		<div class="header"><b>
+			<span class="span-left">
+					<span id="kifupi">TMMS</span><br>
+				    <span id="kirefu">Tailoring Match Management System</span>
+			    </span>
+			<div class="nav">				
+				<ul>
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About Us</a>
+					</li>
+					<li>
+						<a href="register.html">Register</a>
+					</li>
+					<li>
+						<a href="login.html">Login</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact Us</a>
+					</li></b>					
+				</ul>
+			</div>
+		</div>
+		<hr/>
+		<!-- Model for Registration form item 1 -->
+		<div class="container">
+			<div class="section-content">
+				<div class="section-title">
+					<h2>Customer Registration Form.</h2>
+				</div>
+			</div>
+			<div class="form-group-line">
+				<form name="sentMessage" id="contactForm" novalidate="">
+					<div class="column-1">
+						<div class="form-group-1">
+							<p id="login-here">Please Register Here.</p>
+							<input type="text" name ="firstname" class="form-control-1" placeholder="Firstname *" id="name" required="" data-validation-required-message="Please enter your firstname.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group-1">
+							<input type="text" name ="lastname" class="form-control-1" placeholder="Lastname *" id="name" required="" data-validation-required-message="Please enter your lastname.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group-1">
+							<input type="username" name="username" class="form-control-1" placeholder="Your Username *" id="username" required="" data-validation-required-message="Please enter your username.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group-1">
+							<input type="password" name="password" class="form-control-1" placeholder="Your Password *" id="password" required=""data-validation-required-message="Please enter your Password.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group-1">
+							<input type="password" name="password" class="form-control-1" placeholder="Comfirm password *" id="password" required=""data-validation-required-message="Please comfirm your Password.">
+							<p class="help-block text-danger"></p>
+						</div>
+					</div>
+					<div class="column-2">
+						<div class="form-group-1">
+							<p id="login-here">Please Register Here.</p>
+							<input type="email" name ="email" class="form-control-1" placeholder="Your Email *" id="name" required="" data-validation-required-message="Please enter your email.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group-1">
+							<input type="number" name ="mobile" class="form-control-1" placeholder="Your Mobile *" id="mobile" required="" data-validation-required-message="Please enter your mobile.">
+							<p class="help-block text-danger"></p>
+						</div>
+						<div class="form-group-1">
+							<label for="country">State</label><br>
+							<select name="Country" class="form-control-10">
+    							<option value="Tanzania">Tanzania</option>
+   								<option value="Kenya">Kenya</option>
+   								<option value="Uganda">Uganda</option>
+   							</select>
+						</div><br>
+						<div class="form-group-1">
+							<label for="city">City/Region</label><br>
+							<select name="Region" id="mama" class="form-control-10">
+    							<option value="dar es salaam">Dar es salaam</option>
+   								<option value="Mwanza">Mwanza</option>
+   								<option value="Mbeya">Mbeya</option>
+   							</select>
+						</div><br>
+						<div class="form-group-1">
+							<label for="District">District</label><br>
+							<select name="District" class="form-control-10">
+    							<option value="Kinondoni">Kinondoni</option>
+   								<option value="Ilala">Ilala</option>
+   								<option value="Temeke">Temeke</option>
+   							</select>
+						</div>
+						<div class="column-3">
+							<div id="success">
+								<button type="edit" class="form-btn-1">Edit</button>
+								<button type="submit" class="form-btn-1">Submit</button>
+							</div>
+						</div>
+					</div>
+		  		</form>
+			</div>
+		</div>		
+	</div>
+</body>
+</html>
