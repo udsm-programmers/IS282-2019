@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="newfinaltest.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<style type="text/css">
+  
+.bigauto{
+  padding: 30px;
+}
+ .picha1{
+   float: left;
+   height: 100px;
+   text-align: center;
+   margin-left:15px;
+
+  }
+.picha2{
+  /* float: left;*/
+   height: 100px;
+   margin-bottom: 15px;
+   margin-right: :15px;
+
+  }
+  .picha3{
+   float:right;
+   height: 100px;
+   text-align: center;
+   margin-right:15px;
+
+  }
+
+.topnav1 {
+  border: 1px solid dodgerblue;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: dodgerblue;
+}
+
+.topnav1 a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav1 .icon {
+  display: none;
+}
+
+
+.topnav1 .search-container {
+  float: right;
+}
+
+
+.topnav1 input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav1 .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+ padding-left:15%; 
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+.dropdown-content button{
+
+  background-color: green;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav1 a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav1 a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+   .leftcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav1.responsive {position: relative;}
+  .topnav1.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav1.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav1.responsive .dropdown {float: none;}
+  .topnav1.responsive .dropdown-content {position: relative;}
+  .topnav1.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+</style>
+<body>
+  <div class="header">
+        <!--header of title-->
+    <div class="picha1">
+<img src="C:\xampp\htdocs\FinalizationSensaTanzania\picha\tzflag1.png" alt="">
+</div>
+<div class="picha3">
+<img src="C:\xampp\htdocs\FinalizationSensaTanzania\picha\tz flag 4.jpg" alt="">
+
+         </div>
+
+        <h1>SENSA TANZANIA
+            <h1>
+
+<div class="picha2">
+<img src="C:\xampp\htdocs\FinalizationSensaTanzania\picha\tz taa.jpg" alt="">
+
+         </div>
+
+                <h3>SENSA YETU KWA USTAWI IMARA WA MAENDELEO YA TAIFA LETU</h3>
+    </div>
+
+
+
+<div class="topnav1" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> 
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+<div class="search-container">
+    <form action="">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+</div>
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+
+<div class="bigauto">
+    <marquee>KUWA MZALENDO MWAMINIFU NA MUADILIFU KWA TAIFA LAKO KWA KUTIMIZA WAJIBU WAKO KWA IMANI KUBWA ULIYOPEWA </marquee>
+<div class="outerright">
+<div class="topnavmenu">
+<div class="topnav">
+	<div class="sensamenu">
+  <button class="tablinks" onclick="ServantPage(event, 'Home')" id="defaultOpen"style="width: 100px; text-align: center;"><a href="#"><i class="fa fa-home" style="font-size:15px;"></i> Home</a></button>
+                    <h5 style="color: gray"> STATISTICS</h5><br>
+                      <div class="dropdown">
+    <button class="tablinks">Dropdown 
+      <i class=""></i>
+    </button>
+    <div style="color: lightgray" class="dropdown-content">
+             <button class="tablinks" onclick="ServantPage(event, 'General')" id="defaultOpen">General Statistics</button><br>
+                    <button class="dropdown" onclick="ServantPage(event, ' Region')">Region Statistics</span></button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'display')">District Statistics</button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Ward')">Ward Statistics </button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Local_area')">Local Area Statistics </button><br>
+             
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div> <br>
+
+                    <button class="tablinks" onclick="ServantPage(event, 'Gender')" >Gender Statistics</button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Age')">Age Statistics</span></button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Education')">Education Statistics</button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Occupation')">Occupation Statistics  </button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Settlement')">Settlement Statistics </button><br>
+                <button class="tablinks" onclick="ServantPage(event, 'Other')">Other Statistics </button><br>
+                
+</div>
+</div>
+</div>
+<div class="sevantouter">
+<div class="calenderouter">
+<div class="calender">
+	  <iframe src="https://calendar.google.com/calendar/embed?title=TANZANIA%20CALENDER&amp;showPrint=0&amp;showTabs=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23009900&amp;src=en.tz%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=Africa%2FNairobi" style="border-width:0" width="250" height="300" frameborder="0" scrolling="no"></iframe>
+</div>
+</div>
+</div>
+</div>
+
+
+<form method="post"  action="/Representative.php">
+    <form method="post" action="/RepresentativeUpdate.php">
+
+    <div id="Home" class="tabcontent">
+
+       <div class="row">
+            <div class="leftcolumn">
+
+    <div class="card">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Name');
+        data.addColumn('number', 'Salary');
+        data.addColumn('boolean', 'Full Time Employee');
+        data.addRows([
+          ['Mike',  {v: 10000, f: '$10,000'}, true],
+          ['Jim',   {v:8000,   f: '$8,000'},  false],
+          ['Alice', {v: 12500, f: '$12,500'}, true],
+          ['Bob',   {v: 7000,  f: '$7,000'},  true]
+        ]);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script>
+    <div id="table_div"></div>
+  </div>
+  <div class="card">
+      <h2>TITLE HEADING</h2>
+      <div id="piechart"></div>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Work',     11],
+          ['Eat',      2],
+          ['Commute',  2],
+          ['Watch TV', 2],
+          ['Sleep',    7]
+        ]);
+
+
+       
+
+
+        var options = {
+          title: 'My Daily Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+     
+</script>
+   
+    <div id="piechart_3d" style=" height: 350px;"></div>
+ 
+  </div>
+  <div class="card">
+       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Dinosaur', 'Length'],
+          ['Acrocanthosaurus (top-spined lizard)', 12.2],
+          ['Albertosaurus (Alberta lizard)', 9.1],
+          ['Allosaurus (other lizard)', 12.2],
+          ['Apatosaurus (deceptive lizard)', 22.9],
+          ['Archaeopteryx (ancient wing)', 0.9],
+          ['Argentinosaurus (Argentina lizard)', 36.6],
+          ['Baryonyx (heavy claws)', 9.1],
+          ['Brachiosaurus (arm lizard)', 30.5],
+          ['Ceratosaurus (horned lizard)', 6.1],
+          ['Coelophysis (hollow form)', 2.7],
+          ['Compsognathus (elegant jaw)', 0.9],
+          ['Deinonychus (terrible claw)', 2.7],
+          ['Diplodocus (double beam)', 27.1],
+          ['Dromicelomimus (emu mimic)', 3.4],
+          ['Gallimimus (fowl mimic)', 5.5],
+          ['Mamenchisaurus (Mamenchi lizard)', 21.0],
+          ['Megalosaurus (big lizard)', 7.9],
+          ['Microvenator (small hunter)', 1.2],
+          ['Ornithomimus (bird mimic)', 4.6],
+          ['Oviraptor (egg robber)', 1.5],
+          ['Plateosaurus (flat lizard)', 7.9],
+          ['Sauronithoides (narrow-clawed lizard)', 2.0],
+          ['Seismosaurus (tremor lizard)', 45.7],
+          ['Spinosaurus (spiny lizard)', 12.2],
+          ['Supersaurus (super lizard)', 30.5],
+          ['Tyrannosaurus (tyrant lizard)', 15.2],
+          ['Ultrasaurus (ultra lizard)', 30.5],
+          ['Velociraptor (swift robber)', 1.8]]);
+
+        var options = {
+          title: 'Lengths of dinosaurs, in meters',
+          legend: { position: 'none' },
+        };
+
+        var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+    <div id="chart_div" style=" height: 500px;"></div>
+ </div>
+ <div class="card">
+      <h2>TITLE HEADING</h2>
+     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses', 'Profit'],
+          ['2014', 1000, 400, 200],
+          ['2015', 1170, 460, 250],
+          ['2016', 660, 1120, 300],
+          ['2017', 1030, 540, 350]
+        ]);
+
+        var options = {
+          chart: {
+          }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+    <div id="columnchart_material" style="height: 500px;"></div>
+ 
+     </div>
+</div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div></div>
+
+</div>
+
+
+</div></div></div>
+</div></div>
+    </form>
+    <div id="Servant Profile" class="tabcontent">
+        <div class="row">
+            <div class="leftcolumn">
+
+<div class="Servantcontainer">
+<div class="ServantleftcolumnHeader">  
+                             <iframe src="file:///C:/xampp/htdocs/SensaTanzania/Servant.html"   style=" border-radius:20px "  width="100%" height="728px" frameborder="0" scrolling="no"></iframe>
+
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <div id="Census Form" class="tabcontent">
+        <div class="row">
+            <div class="leftcolumn">
+    
+                <div class="CensusFormcontainer">
+                    <div class="leftcolumnHeader">
+                       <iframe src="file:///C:/xampp/htdocs/SensaTanzania/Census.html"   style=" border-radius:20px "  width="100%" height="728px" frameborder="0" scrolling="no"></iframe>
+
+    
+                      
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="Ward" class="tabcontent">
+        
+    <div class="row">
+        <div class="leftcolumn">
+
+            <div class="Areaconteiner">
+                <div class="leftcolumnHeader">
+                   
+    <iframe src="file:///C:/xampp/htdocs/SensaTanzania/Servant_work_area.html"   style=" border-radius:20px "  width="100%" height="728px" frameborder="0" scrolling="no"></iframe>
+
+                   </div>
+        </div>
+        </div>
+       
+
+      </div>
+
+
+        <div id="Census Form" class="tabcontent">
+</div>
+
+
+
+
+    <script>
+        function ServantPage(evt, detail) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(detail).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+</html>
+
