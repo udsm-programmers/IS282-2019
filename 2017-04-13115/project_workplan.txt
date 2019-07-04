@@ -1,0 +1,38 @@
+PROJECT TITLE: TAILORING MATCH MANAGEMENT SYSTEM
+
+1st week:
+	Problem Identification
+	Project title submission
+
+2nd week:
+	Prepare the project workplan
+	First project presentantion
+	Risk analysis
+
+3rd week:
+	Requirement gathering
+	Brainstorming the system functionalities
+	Prepare Application Layout
+	Prepare database data models
+	
+4th week - 5th week:
+	Front-end development with Valid HTML5, CSS & JAVASCRIPT	
+
+6th week - 9th week:
+	Back-end development with PHP
+	Applying data mining with Python
+	 
+10th Week:
+	Release alpha version of TAILORING MATCH MANAGEMENT SYSTEM
+ 	Testing of the application
+
+11th Week:
+ 	Documentations
+
+12th Week – 10th Week:
+	Release the beta version of TAILORING MATCH MANAGEMENT SYSTEM
+	Final testing and finaliing documenting the software
+
+13th Week: 
+	Submit the final version of the application
+

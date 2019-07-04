@@ -1,0 +1,82 @@
+.ServantleftcolumnHeader {
+    width: 100%;
+    height: 100px;
+    background-color: #45a049;
+    background-color: #45a049;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.topnav a {
+ 
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.ServantleftcolumnForm {
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.ServantContener input[type=text],
+select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ServantContener input[type=submit] {
+    width: fit-content;
+    color: white;
+    padding-left: 30%;
+    margin: 15px 0;
+    margin-left: 10px;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.ServantContener input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div .Servantcontainer {
+    border-radius: 5px;
+    background-color: rgb(102, 124, 145);
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn {
+        width: 57.5%;
+        padding: 40;
+    }
+}
+
+div .CensusFormcontainer {
+    border-radius: 5px;
+    background-color:rgb(109, 104, 76);
+    padding: 20px;
+}
+
+div .Areaconteiner {
+    border-radius: 5px;
+    background-color:rgb(177, 189, 133);
+    padding: 20px;
+}

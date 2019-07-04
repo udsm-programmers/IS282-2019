@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".wellcom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/joinusbg"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_now"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="50sp"
+            android:textSize="40sp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <EditText
+            android:backgroundTint="@color/yellow"
+            android:layout_width="350dp"
+            android:textColorHighlight="@color/colorPrimary"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_username"
+            android:inputType="text"
+            android:textStyle="italic"
+            android:paddingBottom="20sp"
+            android:textColorHint="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_perm_identity_black_24dp"
+            android:drawableStart="@drawable/ic_perm_identity_black_24dp"
+            android:drawablePadding="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+
+            android:id="@+id/edit1"/>
+
+        <EditText
+            android:autofillHints="@string/hint_password"
+            android:inputType="numberPassword"
+            android:textColorHighlight="@color/colorPrimary"
+            android:paddingBottom="25sp"
+            android:layout_width="350dp"
+            android:backgroundTint="@color/yellow"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_password"
+            android:textStyle="italic"
+            android:textColorHint="@color/colorPrimary"
+            android:id="@+id/edit2"
+            android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:drawablePadding="10dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:text="@string/text_login"
+                android:layout_margin="13dp"
+                android:textColor="#fff"
+                android:background="@drawable/buttonshape"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn1"
+                android:drawableRight="@drawable/ic_send_black_24dp"
+                android:drawableEnd="@drawable/ic_send_black_24dp"
+                android:drawablePadding="20sp"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_forget"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/forget"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

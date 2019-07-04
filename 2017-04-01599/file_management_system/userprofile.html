@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="redio.css">
+   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+       <h2>FILE MANAGEMENT SYSTEM</h2>
+    </div>
+        <div class="leftcontainer">
+            <div class="leftcontent">
+            <div class="leftcontentin">
+             <button style="width:100px; height: 40px; text-align: center; font-size: medium; font-family: Georgia, 'Times New Roman', Times, serif">
+      <i class="fa fa-home"></i>Home</button><br><br>
+  <button class="tablinks" onclick="openCity(event, 'User details')" id="defaultOpen">User details</button><br><br>
+  <button class="tablinks" onclick="openCity(event, 'Upload file')">Upload file</button><br><br>
+  <button class="tablinks" onclick="openCity(event, 'View feedbacks')">View feedbacks</button><br><br>
+  <button class="tablinks" onclick="openCity(event, 'Download file')">Download file</button><br><br>
+  <button class="tablinks" onclick="openCity(event, 'Change password')">Change password</button><br><br>
+  <button class="tablinks" onclick="openCity(event, 'Logout')">Logout</button>
+     </div>
+    </div>
+     </div>
+    <div id="User details" class="tabcontent">
+        <div class="outerrightcontainer">
+            <div class="rightcontent">
+
+                <div class="Rightcontainer1">
+                    <div class="Rightcontentcontainer">
+                        <h3> User details</h3>
+   <p> 
+     user can be able to put his/her informations such as birth certificate,academic details,awards,passport.
+  </p>
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <div id="Upload file" class="tabcontent">
+        <!-- <div class="row"> -->
+            <div class="rightcontent">
+
+<div class="Rightcontainer2">
+<div class="Rightcontentcontainer">                                    
+<h3>Upload file</h3>
+  <p><form action="myform"> <input type="file" name="fileupload" value="fileupload" id="User details">
+    <label for="User details"> Select a file to upload</label> <input type="submit" value="submit"> </form>.</p> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <div id="View feedbacks" class="tabcontent">
+        <!-- <div class="row"> -->
+            <div class="rightcontent">
+    
+                <div class="Rightcontainer3">
+                    <div class="Rightcontentcontainer">
+                  
+<h3>View feedbacks</h3>
+  <p> The employee will be able to see the feedbacks that has been sent by the supervisor.</p>
+				  
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="Download file" class="tabcontent">
+        
+    <!-- <div class="row"> -->
+        <div class="rightcontent">
+
+            <div class="Rightcontainer4">
+                <div class="Rightcontentcontainer">
+                    <h3>Download file</h3>
+  <p> The employee will be able to download file that has been sent by the supervisor to them.</p>
+
+        </div>
+        </div>
+       </div>
+        </div>
+       
+
+      </div>
+
+
+        <div id="Change password" class="tabcontent">
+		<!-- <div class="row"> -->
+        <div class="rightcontent">
+
+            <div class="Rightcontainer4">
+                <div class="Rightcontentcontainer">
+                   
+		<h3>Change password</h3>
+  <p> The employee will be able to change password.</p>
+</div>
+ </div>
+        </div>
+       </div>
+        </div>
+       
+
+<div id="Logout" class="tabcontent">
+<!-- <div class="row"> -->
+        <div class="rightcontent">
+
+            <div class="Rightcontainer4">
+                <div class="Rightcontentcontainer">
+                   
+  <h3>Logout</h3>
+  <p> The employee will be able to exit from the system after completing his/her issues.</p>
+</div>
+
+ </div>
+        </div>
+       </div>
+        </div>
+       
+
+
+    <script>
+        function openCity(evt, detail) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(detail).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>

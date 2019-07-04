@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="FamilyRepresentative.css">
+    <link rel="stylesheet" type="text/css" href="Servantdetail.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+ .bigauto{
+  padding: 30px;
+}
+ .picha1{
+   float: left;
+   height: 100px;
+   text-align: center;
+   margin-left:15px;
+
+  }
+.picha2{
+  /* float: left;*/
+   height: 100px;
+   margin-bottom: 15px;
+   margin-right: :15px;
+
+  }
+  .picha3{
+   float:right;
+   height: 100px;
+   text-align: center;
+   margin-right:15px;
+
+  }
+
+ 
+</style>
+
+</head>
+
+<body>
+    <div class="header">
+    <div class="picha1">
+<img src="C:\xampp\htdocs\FinalizationSensaTanzania\picha\tzflag1.png" alt="">
+</div>
+<div class="picha3">
+<img src="C:\xampp\htdocs\FinalizationSensaTanzania\picha\tz flag 4.jpg" alt="">
+
+         </div>
+
+        <h1>SENSA TANZANIA
+            <h1>
+
+<div class="picha2">
+<img src="C:\xampp\htdocs\FinalizationSensaTanzania\picha\tz taa.jpg" alt="">
+
+         </div>
+
+                <h3>SENSA YETU KWA USTAWI IMARA WA MAENDELEO YA TAIFA LETU</h3>
+    </div>
+<div class="bigauto">
+    <marquee>KUWA MZALENDO MWAMINIFU NA MUADILIFU KWA TAIFA LAKO KWA KUTIMIZA WAJIBU WAKO KWA IMANI KUBWA ULIYOPEWA </marquee>
+
+    <div class="outerleftleft">
+
+        <div class="topnavmenu">
+            <div class="topnav">
+                <div class="sensamenu">
+                    <button style="width: 100px; text-align: center;"><a href="#"><i class="fa fa-home" style="font-size:15px;"></i> Home</a></button>
+                    <h5 style="color: gray">SERVANT WORK</h5><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Representative')" id="defaultOpen">Register Representative</button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Servant Profile')">Servant Profile</span></button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Census Form')">Census Form</button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'Area Profile')">Area Profile  </button><br>
+                    <button class="tablinks" onclick="ServantPage(event, 'View Census info&Submition')">View Census info&Submition </button><br>
+                </div>
+            </div>
+        </div>
+        <div class="calenderouter">
+            <div class="calender">
+                <iframe src="https://calendar.google.com/calendar/embed?title=TANZANIA%20CALENDER&amp;showPrint=0&amp;showTabs=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23009900&amp;src=en.tz%23holiday%40group.v.calendar.google.com&amp;color=%2329527A&amp;ctz=Africa%2FNairobi"
+                    style="border-width:0" width="250" height="300" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </div>
+    </div>
+<form method="post"  action="/Representative.php">
+    <form method="post" action="/RepresentativeUpdate.php">
+
+    <div id="Representative" class="tabcontent">
+
+       <div class="row">
+            <div class="leftcolumn">
+
+                <div class="container">
+                    <div class="leftcolumnHeader">
+ 
+                             <iframe src="file:///C:/xampp/htdocs/SensaTanzania/Representative.html"   style=" border-radius:20px "  width="100%" height="728px" frameborder="0" scrolling="no"></iframe>
+
+
+</div></div></div>
+</div></div>
+    </form>
+    <div id="Servant Profile" class="tabcontent">
+        <div class="row">
+            <div class="leftcolumn">
+
+<div class="Servantcontainer">
+<div class="ServantleftcolumnHeader">  
+                             <iframe src="file:///C:/xampp/htdocs/SensaTanzania/Servant.html"   style=" border-radius:20px "  width="100%" height="728px" frameborder="0" scrolling="no"></iframe>
+
+</div>
+</div>
+</div>
+</div>
+    </div>
+    <div id="Census Form" class="tabcontent">
+        <div class="row">
+            <div class="leftcolumn">
+    
+                <div class="CensusFormcontainer">
+                    <div class="leftcolumnHeader">
+                       <iframe src="file:///C:/xampp/htdocs/SensaTanzania/Census.html"   style=" border-radius:20px "  width="100%" height="728px" frameborder="0" scrolling="no"></iframe>
+
+    
+                      
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <div id="Area Profile" class="tabcontent">
+        
+       <div class="row">
+            <div class="leftcolumn">
+
+    <div class="card">
+
+    <iframe src="file:///C:/xampp/htdocs/SensaTanzania/Servant_work_area.html"   style=" border-radius:20px "  width="100%" height="728px" frameborder="0" scrolling="no"></iframe>
+
+                   </div>
+        </div>
+        </div>
+       
+
+      </div>
+
+
+        <div id="Census Form" class="tabcontent">
+</div>
+
+
+
+
+    <script>
+        function ServantPage(evt, detail) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(detail).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+    </script>
+
+</body>
+
+</html>
