@@ -1,0 +1,66 @@
+/*.ServantleftcolumnHeader {
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    background-color: lightgray;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+*/
+.ServantleftcolumnForm {
+    margin-left: 20%;
+    padding: 20px;
+}
+
+.ServantContener input[type=text],
+select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.ServantContener input[type=submit] {
+    width: fit-content;
+    color: white;
+    padding-left: 30%;
+    margin: 15px 0;
+    margin-left: 10px;
+    border: none;
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.ServantContener input[type=submit]:hover {
+    background-color: lightgray;
+}
+
+div .Servantcontainer {
+    border-radius: 20px;
+    background-color:white;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .leftcolumn {
+        width: 57.5%;
+        padding: 40;
+    }
+}
+
+div .CensusFormcontainer {
+    border-radius: 20px;
+    background-color:white;
+    padding: 20px;
+}
+
+div .Areaconteiner {
+    border-radius: 20px;
+    background-color:white;
+    padding: 20px;
+}
