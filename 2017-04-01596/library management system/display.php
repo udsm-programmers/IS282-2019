@@ -39,17 +39,26 @@ if (mysqli_num_rows($result) > 0) {?>
         <td><?php echo $row["id"];?> </td>
         <td><?php echo $row["title"];?> </td>
         <td><?php echo $row["publisher"];?> </td>
-        <td><?php echo $row["author"];?> </td>
+      
+        </tr> <td><?php echo $row["author"];?> </td>
         <td><?php echo $row["category"];?> </td>
         <td><?php echo $row["description"];?> </td>
         <td><?php echo $row["date"];?> </td>
+		     <td>
+            <form method="GET" action="">
+                <input style="display: none;" type="text" name="delete" value="<?php echo $row['id']; ?>">
+                <button style="margin-top: 50px; background: blue; border:0px;" type="submit" name="submit" value="submit">Delete</button>
+            </form>
+        </td>
+        
+       <td>
+            <form method="GET" action="update.php/<?php echo $row['id'] ?>">
+                <input style="display: none;" type="text" name="update" value="<?php echo $row['id'] ?>">
+                <button style="margin-top: 50px; background: blue; border:0px;" type="submit" name="submit" value="submit">Update</button>
+            </form>
+       </td>
        
-        <td><a href="delete.php?id='.$row['id'].'">Delete</a>  </td>
-        
-    
-        
-       <td> <a href="update.php ?id= '.$row['id'].'" >update</a> </td>
-        
+       
       
         </tr>
  <?php
