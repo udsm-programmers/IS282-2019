@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./assets/style.css">
+    
+    <title>Payroll | Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Payroll sign up form</h1>
+            <hr style="width: 30%; position: relative; top: 7rem; margin: auto;">
+        </header>
+        <form action="signup.php" method="post">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" name="firstName" placeholder="" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" name="lastName" placeholder="" autocomplete="off" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" name="email" placeholder="" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" name="password" placeholder="" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <label for="job">Job:</label>
+                <input type="text" class="form-control" name="job" placeholder="" autocomplete="off" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="sign up" class="btn btn-primary" name="submit">
+            </div>
+        </form> 
+    </div>
+</body>
+</html>

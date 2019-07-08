@@ -1,0 +1,151 @@
+/*home page css*/
+body{
+  background-color:green;
+    border-block-end-width: 50%;
+    text-align: center;
+  }
+.header img {
+  float: center;
+  width: 150px;
+  height: 150px;
+  background: #555;
+}
+#logo{
+  border-radius: 50%;
+  float: center;
+}
+.efaceheader img {
+  float: center;
+  width: 100px;
+  height: 100px;
+  background: #555;
+}
+#efacelogo{
+  border-radius: 50%;
+  float: left;
+}
+.checkboxes{
+  float: left;
+  text-align: left;
+  padding: 2px;
+}
+.container button{
+  width: 50px;
+}
+.welcome{
+  color:greenyellow;
+
+}
+.ebutton{
+  color: white;
+  margin: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+body h2{
+  text-align-last: auto;
+  color: darkgreen;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password], input[type="email"] {
+  width: 20%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=login], input[type=email]{
+  width: 10%;
+  padding: 80px 10px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+
+}
+
+/* Set a style for all buttons */
+ button {
+  background-color: #4CAF50;
+  color: white;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  display: inline-block;
+  border:1px solid #45a049;
+  border-radius: 4px;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  background-color:#4CAF50;
+  float:middle;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+/* Avatar image */
+img.avatar {
+  width: 0%;
+  border-radius: 30%;
+}
+
+/* Add padding to containers */
+.container {
+  padding: 10px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: center;
+  padding-top: 0px;
+}
+
+/*employeefase css*/
+input[type=text], select {
+  width: 20%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 30%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.regform{
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  padding: 100px;
+  text-align: left;
+}
+
